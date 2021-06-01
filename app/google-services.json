@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "74994308255",
+    "firebase_url": "https://cnpm-29a1b-default-rtdb.firebaseio.com",
+    "project_id": "cnpm-29a1b",
+    "storage_bucket": "cnpm-29a1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74994308255:android:15d1e0b45c023a8a39feaa",
+        "android_client_info": {
+          "package_name": "com.example.nurseryschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74994308255-p3f11hc0njg7na9d8ajkibvvh0gqb1go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXSwy5C4klp9Iir0CIrBQoXlqlrK1pfys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74994308255-p3f11hc0njg7na9d8ajkibvvh0gqb1go.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
