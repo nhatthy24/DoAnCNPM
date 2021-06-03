@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_card"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/profile"/>
+    <TextView
+        android:id="@+id/name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huỳnh Ngọc Tấn"
+        android:layout_toEndOf="@id/image_card"
+        tools:ignore="RtlCompat"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Tan DB"
+        android:layout_below="@+id/name_user"
+        android:layout_toEndOf="@+id/image_card"
+        tools:ignore="RtlCompat,UnknownId"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text_message"
+        tools:ignore="RtlCompat"
+        android:text="12/5/2021"
+        android:layout_below="@id/name_user"
+        android:layout_marginLeft="20dp"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+
+</RelativeLayout>
