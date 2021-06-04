@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_win_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#368e3a">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_window_chat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bùi Văn Nhất"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/image_window_chat"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar_win_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/window_chat_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+
+
+
+
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="12"
+           android:layout_alignParentBottom="true"
+           android:orientation="horizontal"
+           android:background="@drawable/bg_bottom_message">
+
+           <EditText
+               android:id="@+id/enter_message"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:hint="Enter Your Message ......"
+               android:background="@drawable/bg_editext"
+               android:padding="5dp"
+               android:layout_alignParentBottom="true"
+               android:layout_marginLeft="5dp"
+               android:layout_marginBottom="5dp"
+               android:layout_weight="9"/>
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="5dp"
+               android:layout_marginTop="5dp">
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_baseline_send_24"
+                   />
+           </RelativeLayout>
+
+       </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
