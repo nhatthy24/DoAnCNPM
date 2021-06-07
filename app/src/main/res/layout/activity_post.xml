@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".PostActivity">
+
+    <TextView
+        android:id="@+id/TxtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng bài viết"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkTextColor"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        style="@style/modifiedEditText"
+        android:id="@+id/txtdata"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:hint="Nhập nội dung"
+        android:gravity="left"
+        android:layout_below="@id/TxtTitle"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtdata"/>
+
+    <Button
+        android:id="@+id/btnbrowse"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="70dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Image"
+        android:layout_toRightOf="@id/image_view"
+        android:layout_below="@id/txtdata"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_toRightOf="@id/btnbrowse"
+        android:layout_below="@id/txtdata"
+        android:text="Upload"
+        />
+
+</RelativeLayout>
